@@ -1,0 +1,812 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`on error returns error data 1`] = `
+Object {
+  "data": undefined,
+  "error": [CombinedError: [Network] ],
+  "extensions": undefined,
+  "operation": Object {
+    "context": Object {
+      "fetchOptions": Object {
+        "method": "POST",
+      },
+      "requestPolicy": "cache-first",
+      "url": "http://localhost:3000/graphql",
+    },
+    "key": 2,
+    "kind": "query",
+    "query": Object {
+      "__key": 3521976120,
+      "definitions": Array [
+        Object {
+          "directives": Array [],
+          "kind": "OperationDefinition",
+          "loc": undefined,
+          "name": Object {
+            "kind": "Name",
+            "loc": undefined,
+            "value": "getUser",
+          },
+          "operation": "query",
+          "selectionSet": Object {
+            "kind": "SelectionSet",
+            "loc": undefined,
+            "selections": Array [
+              Object {
+                "alias": undefined,
+                "arguments": Array [
+                  Object {
+                    "kind": "Argument",
+                    "loc": undefined,
+                    "name": Object {
+                      "kind": "Name",
+                      "loc": undefined,
+                      "value": "name",
+                    },
+                    "value": Object {
+                      "kind": "Variable",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "name",
+                      },
+                    },
+                  },
+                ],
+                "directives": Array [],
+                "kind": "Field",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "user",
+                },
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "loc": undefined,
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "id",
+                      },
+                      "selectionSet": undefined,
+                    },
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "firstName",
+                      },
+                      "selectionSet": undefined,
+                    },
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "lastName",
+                      },
+                      "selectionSet": undefined,
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+          "variableDefinitions": Array [
+            Object {
+              "defaultValue": undefined,
+              "directives": Array [],
+              "kind": "VariableDefinition",
+              "loc": undefined,
+              "type": Object {
+                "kind": "NamedType",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "String",
+                },
+              },
+              "variable": Object {
+                "kind": "Variable",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "name",
+                },
+              },
+            },
+          ],
+        },
+      ],
+      "kind": "Document",
+      "loc": Object {
+        "end": 86,
+        "source": Object {
+          "body": "# getUser
+query getUser($name: String) { user(name: $name) { id firstName lastName } }",
+          "locationOffset": Object {
+            "column": 1,
+            "line": 1,
+          },
+          "name": "gql",
+        },
+        "start": 0,
+      },
+    },
+    "variables": Object {
+      "name": "Clara",
+    },
+  },
+}
+`;
+
+exports[`on error returns error data with status 400 and manual redirect mode 1`] = `
+Object {
+  "data": undefined,
+  "error": [CombinedError: [Network] ],
+  "extensions": undefined,
+  "operation": Object {
+    "context": Object {
+      "fetchOptions": [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": Object {
+              "redirect": "manual",
+            },
+          },
+        ],
+      },
+      "requestPolicy": "cache-first",
+      "url": "http://localhost:3000/graphql",
+    },
+    "key": 2,
+    "kind": "query",
+    "query": Object {
+      "__key": 3521976120,
+      "definitions": Array [
+        Object {
+          "directives": Array [],
+          "kind": "OperationDefinition",
+          "loc": undefined,
+          "name": Object {
+            "kind": "Name",
+            "loc": undefined,
+            "value": "getUser",
+          },
+          "operation": "query",
+          "selectionSet": Object {
+            "kind": "SelectionSet",
+            "loc": undefined,
+            "selections": Array [
+              Object {
+                "alias": undefined,
+                "arguments": Array [
+                  Object {
+                    "kind": "Argument",
+                    "loc": undefined,
+                    "name": Object {
+                      "kind": "Name",
+                      "loc": undefined,
+                      "value": "name",
+                    },
+                    "value": Object {
+                      "kind": "Variable",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "name",
+                      },
+                    },
+                  },
+                ],
+                "directives": Array [],
+                "kind": "Field",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "user",
+                },
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "loc": undefined,
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "id",
+                      },
+                      "selectionSet": undefined,
+                    },
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "firstName",
+                      },
+                      "selectionSet": undefined,
+                    },
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "lastName",
+                      },
+                      "selectionSet": undefined,
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+          "variableDefinitions": Array [
+            Object {
+              "defaultValue": undefined,
+              "directives": Array [],
+              "kind": "VariableDefinition",
+              "loc": undefined,
+              "type": Object {
+                "kind": "NamedType",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "String",
+                },
+              },
+              "variable": Object {
+                "kind": "Variable",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "name",
+                },
+              },
+            },
+          ],
+        },
+      ],
+      "kind": "Document",
+      "loc": Object {
+        "end": 86,
+        "source": Object {
+          "body": "# getUser
+query getUser($name: String) { user(name: $name) { id firstName lastName } }",
+          "locationOffset": Object {
+            "column": 1,
+            "line": 1,
+          },
+          "name": "gql",
+        },
+        "start": 0,
+      },
+    },
+    "variables": Object {
+      "name": "Clara",
+    },
+  },
+}
+`;
+
+exports[`on success returns response data 1`] = `
+Object {
+  "data": Object {
+    "data": Object {
+      "user": 1200,
+    },
+  },
+  "error": undefined,
+  "extensions": undefined,
+  "operation": Object {
+    "context": Object {
+      "fetchOptions": [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": Object {},
+          },
+        ],
+      },
+      "requestPolicy": "cache-first",
+      "url": "http://localhost:3000/graphql",
+    },
+    "key": 2,
+    "kind": "query",
+    "query": Object {
+      "__key": 3521976120,
+      "definitions": Array [
+        Object {
+          "directives": Array [],
+          "kind": "OperationDefinition",
+          "loc": undefined,
+          "name": Object {
+            "kind": "Name",
+            "loc": undefined,
+            "value": "getUser",
+          },
+          "operation": "query",
+          "selectionSet": Object {
+            "kind": "SelectionSet",
+            "loc": undefined,
+            "selections": Array [
+              Object {
+                "alias": undefined,
+                "arguments": Array [
+                  Object {
+                    "kind": "Argument",
+                    "loc": undefined,
+                    "name": Object {
+                      "kind": "Name",
+                      "loc": undefined,
+                      "value": "name",
+                    },
+                    "value": Object {
+                      "kind": "Variable",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "name",
+                      },
+                    },
+                  },
+                ],
+                "directives": Array [],
+                "kind": "Field",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "user",
+                },
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "loc": undefined,
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "id",
+                      },
+                      "selectionSet": undefined,
+                    },
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "firstName",
+                      },
+                      "selectionSet": undefined,
+                    },
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "lastName",
+                      },
+                      "selectionSet": undefined,
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+          "variableDefinitions": Array [
+            Object {
+              "defaultValue": undefined,
+              "directives": Array [],
+              "kind": "VariableDefinition",
+              "loc": undefined,
+              "type": Object {
+                "kind": "NamedType",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "String",
+                },
+              },
+              "variable": Object {
+                "kind": "Variable",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "name",
+                },
+              },
+            },
+          ],
+        },
+      ],
+      "kind": "Document",
+      "loc": Object {
+        "end": 86,
+        "source": Object {
+          "body": "# getUser
+query getUser($name: String) { user(name: $name) { id firstName lastName } }",
+          "locationOffset": Object {
+            "column": 1,
+            "line": 1,
+          },
+          "name": "gql",
+        },
+        "start": 0,
+      },
+    },
+    "variables": Object {
+      "name": "Clara",
+    },
+  },
+}
+`;
+
+exports[`on success returns response data 2`] = `"{\\"query\\":\\"query getUser($name: String) {\\\\n  user(name: $name) {\\\\n    id\\\\n    firstName\\\\n    lastName\\\\n  }\\\\n}\\\\n\\",\\"operationName\\":\\"getUser\\",\\"variables\\":{\\"name\\":\\"Clara\\"}}"`;
+
+exports[`on success uses a file when given 1`] = `
+Object {
+  "data": Object {
+    "data": Object {
+      "user": 1200,
+    },
+  },
+  "error": undefined,
+  "extensions": undefined,
+  "operation": Object {
+    "context": Object {
+      "fetchOptions": [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": Object {},
+          },
+        ],
+      },
+      "requestPolicy": "cache-first",
+      "url": "http://localhost:3000/graphql",
+    },
+    "key": 3,
+    "kind": "mutation",
+    "query": Object {
+      "__key": 4034972436,
+      "definitions": Array [
+        Object {
+          "directives": Array [],
+          "kind": "OperationDefinition",
+          "loc": undefined,
+          "name": Object {
+            "kind": "Name",
+            "loc": undefined,
+            "value": "uploadProfilePicture",
+          },
+          "operation": "mutation",
+          "selectionSet": Object {
+            "kind": "SelectionSet",
+            "loc": undefined,
+            "selections": Array [
+              Object {
+                "alias": undefined,
+                "arguments": Array [
+                  Object {
+                    "kind": "Argument",
+                    "loc": undefined,
+                    "name": Object {
+                      "kind": "Name",
+                      "loc": undefined,
+                      "value": "picture",
+                    },
+                    "value": Object {
+                      "kind": "Variable",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "picture",
+                      },
+                    },
+                  },
+                ],
+                "directives": Array [],
+                "kind": "Field",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "uploadProfilePicture",
+                },
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "loc": undefined,
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "location",
+                      },
+                      "selectionSet": undefined,
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+          "variableDefinitions": Array [
+            Object {
+              "defaultValue": undefined,
+              "directives": Array [],
+              "kind": "VariableDefinition",
+              "loc": undefined,
+              "type": Object {
+                "kind": "NamedType",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "File",
+                },
+              },
+              "variable": Object {
+                "kind": "Variable",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "picture",
+                },
+              },
+            },
+          ],
+        },
+      ],
+      "kind": "Document",
+      "loc": Object {
+        "end": 125,
+        "source": Object {
+          "body": "# uploadProfilePicture
+mutation uploadProfilePicture($picture: File) { uploadProfilePicture(picture: $picture) { location } }",
+          "locationOffset": Object {
+            "column": 1,
+            "line": 1,
+          },
+          "name": "gql",
+        },
+        "start": 0,
+      },
+    },
+    "variables": Object {
+      "picture": File {},
+    },
+  },
+}
+`;
+
+exports[`on success uses a file when given 2`] = `Object {}`;
+
+exports[`on success uses a file when given 3`] = `FormData {}`;
+
+exports[`on success uses multiple files when given 1`] = `
+Object {
+  "data": Object {
+    "data": Object {
+      "user": 1200,
+    },
+  },
+  "error": undefined,
+  "extensions": undefined,
+  "operation": Object {
+    "context": Object {
+      "fetchOptions": [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": Object {},
+          },
+        ],
+      },
+      "requestPolicy": "cache-first",
+      "url": "http://localhost:3000/graphql",
+    },
+    "key": 3,
+    "kind": "mutation",
+    "query": Object {
+      "__key": 2033658603,
+      "definitions": Array [
+        Object {
+          "directives": Array [],
+          "kind": "OperationDefinition",
+          "loc": undefined,
+          "name": Object {
+            "kind": "Name",
+            "loc": undefined,
+            "value": "uploadProfilePictures",
+          },
+          "operation": "mutation",
+          "selectionSet": Object {
+            "kind": "SelectionSet",
+            "loc": undefined,
+            "selections": Array [
+              Object {
+                "alias": undefined,
+                "arguments": Array [
+                  Object {
+                    "kind": "Argument",
+                    "loc": undefined,
+                    "name": Object {
+                      "kind": "Name",
+                      "loc": undefined,
+                      "value": "pictures",
+                    },
+                    "value": Object {
+                      "kind": "Variable",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "pictures",
+                      },
+                    },
+                  },
+                ],
+                "directives": Array [],
+                "kind": "Field",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "uploadProfilePicture",
+                },
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "loc": undefined,
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "loc": undefined,
+                      "name": Object {
+                        "kind": "Name",
+                        "loc": undefined,
+                        "value": "location",
+                      },
+                      "selectionSet": undefined,
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+          "variableDefinitions": Array [
+            Object {
+              "defaultValue": undefined,
+              "directives": Array [],
+              "kind": "VariableDefinition",
+              "loc": undefined,
+              "type": Object {
+                "kind": "ListType",
+                "loc": undefined,
+                "type": Object {
+                  "kind": "NamedType",
+                  "loc": undefined,
+                  "name": Object {
+                    "kind": "Name",
+                    "loc": undefined,
+                    "value": "File",
+                  },
+                },
+              },
+              "variable": Object {
+                "kind": "Variable",
+                "loc": undefined,
+                "name": Object {
+                  "kind": "Name",
+                  "loc": undefined,
+                  "value": "pictures",
+                },
+              },
+            },
+          ],
+        },
+      ],
+      "kind": "Document",
+      "loc": Object {
+        "end": 132,
+        "source": Object {
+          "body": "# uploadProfilePictures
+mutation uploadProfilePictures($pictures: [File]) { uploadProfilePicture(pictures: $pictures) { location } }",
+          "locationOffset": Object {
+            "column": 1,
+            "line": 1,
+          },
+          "name": "gql",
+        },
+        "start": 0,
+      },
+    },
+    "variables": Object {
+      "picture": Array [
+        File {},
+        File {},
+      ],
+    },
+  },
+}
+`;
+
+exports[`on success uses multiple files when given 2`] = `Object {}`;
+
+exports[`on success uses multiple files when given 3`] = `FormData {}`;
