@@ -1,5 +1,5 @@
 {
-  "name": "@urql/exchange-multipart-fetch",
+  "name": "multipart-fetch",
   "version": "0.1.11",
   "description": "An exchange that allows regular fetch and will transition to multipart when files are included",
   "sideEffects": false,
